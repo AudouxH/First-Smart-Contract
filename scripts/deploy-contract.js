@@ -14,7 +14,7 @@ async function main() {
 
   // get the contract from hardhat ethers blockchain
   const Token = await hre.ethers.getContractFactory("firstContrat");
-  // deploy the contract in the blockchain
+  // deploy the contract in the blockchain with "Hello, world!" owner information
   const token = await Token.deploy("Hello, world!");
   // wait the deployment contract
   await token.deployed();
