@@ -66,12 +66,12 @@ describe("Test first Smart Contract", () => {
     });
   });
 
-  describe('Change the secret information string', () => {
+  describe('Change the owner information string', () => {
     it("Should return the new greeting once it's changed", async function () {
-      expect(await token.getSecretInformation()).to.equal("Hello, world!");
-      const setGreetingTx = await token.setSecretInformation("Hola, mundo!");
+      expect(await token.getownerInformation()).to.equal("Hello, world!");
+      const setGreetingTx = await token.setownerInformation(owner.address, "Hola, mundo!");
       await setGreetingTx.wait();
-      expect(await token.getSecretInformation()).to.equal("Hola, mundo!");
+      expect(await token.getownerInformation()).to.equal("Hola, mundo!");
     });
   });
   
