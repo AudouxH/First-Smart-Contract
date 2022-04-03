@@ -1,0 +1,115 @@
+{
+    "address": "0x6AC0dDf2593C1eA5bfb4e1A59320178f38bf026c",
+    "abi": [
+        {
+            "type": "constructor",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "_greeting"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "balanceOf",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "account"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "uint256"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "getSecretInformation",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "name",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "owner",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "address"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "setSecretInformation",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "string",
+                    "name": "_greeting"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "type": "function",
+            "name": "totalSupply",
+            "constant": true,
+            "stateMutability": "view",
+            "payable": false,
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "uint256"
+                }
+            ]
+        },
+        {
+            "type": "function",
+            "name": "transfer",
+            "constant": false,
+            "payable": false,
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "to"
+                },
+                {
+                    "type": "uint256",
+                    "name": "amount"
+                }
+            ],
+            "outputs": []
+        }
+    ]
+}
